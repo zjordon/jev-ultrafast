@@ -55,10 +55,63 @@ Content-Type: application/json
 
 | 请求体字段 | 考卷上的角色 | 模型是否看到 |
 |-----------|-------------|-------------|
-| `questions` 的键名（operation / click_target） | **题号**——答题卡回填用 | ❌ **不发送** |
+| `questions` 的键名（operation / click_target） | **题号**——答题卡回填用 | ❌ 不进入模型输入（见下方注） |
 | `instructions`（goal + rules + operation 假设） | **题干** | ✅ |
 | `criteria` | **选项 + 释义** | ✅ |
 | `state` | **所有题共享的阅读材料** | ✅ |
+
+> **注：键名的三层命运**。① **线缆层**：键名确实随 HTTP 请求体发送到了 TypeSafe 服务器——它就是 JSON 的字段名；② **服务端**：服务器解析 questions 映射后，用键名做答案路由 ID，并在**构造模型输入时把键剥离**（官方文档的原话是 "keys aren't sent to the model"，指的正是这一步）；③ **模型层**：Jev 的上下文里只有 state 与每道题的 instructions/criteria，**键名从未出现在模型眼前**——不是"模型收到后丢弃"，而是根本没进模型的输入。
+>
+> 这个区别有实质意义：既然键名在机制上进不了模型上下文，它就**不可能影响模型输出**——问题可以随意命名，不必担心命名本身成为提示注入的载体；键的唯一用途是服务端把答案按原键放回 `answers`，供代码取回。
+
+### 2.1 一次交互的数据变换全景图
+
+**核心事实：客户端发出的内容不是原样给模型的。** TypeSafe 服务端在中间做了一次"剥离—重构—还原"：去程把键名剥掉、只把内容重组成模型输入；回程把答案按原键名还原。
+
+```mermaid
+flowchart LR
+    subgraph Client ["客户端 · jev_ultrafast/model.py"]
+        A ["choose() 构建请求体"]
+        V ["validate_choice() 批卷<br/>+ 只消费选中头"]
+    end
+    subgraph Server ["TypeSafe 服务端"]
+        P ["解析 questions 映射"]
+        S ["剥离键名<br/>（留作路由 ID）"]
+        B ["重组模型输入<br/>（纯内容，无键名）"]
+        R ["答案按原键回填"]
+    end
+    subgraph JevModel ["Jev 模型"]
+        M ["阅读理解<br/>输出概率分布"]
+    end
+
+    A -- "HTTP POST 完整 JSON<br/>（含 operation / click_target 等键名）" --> P
+    P --> S --> B
+    B -- "state + 各题 instructions / criteria<br/>（键名不在场）" --> M
+    M -- "每题 choice + probabilities + confidence" --> R
+    R -- "HTTP 响应 answers<br/>（键名已还原）" --> V
+```
+
+同一份数据在三个检查点的形态对照：
+
+```text
+检查点 ① 线缆上的请求体              检查点 ② 模型的输入               检查点 ③ 回到客户端的响应
+（客户端 → 服务端）                   （服务端重组后）                  （服务端 → 客户端）
+┌────────────────────────┐     ┌────────────────────────┐     ┌────────────────────────┐
+│ {                      │     │ state:                 │     │ { "answers": {         │
+│   "model": "jev-latest"│     │   page / elements /    │     │   "operation": {       │
+│   "state": {...},      │     │   recent_actions       │     │     choice, probs,     │
+│   "questions": {       │ ──▶ │ 题 #1: instructions    │ ──▶ │     confidence },      │
+│     "operation": {...},│ 剥键 │        + criteria      │ 还原 │   "click_target": {...}│
+│     "click_target": {} │     │ 题 #2: instructions    │ 键名 │   },                  │
+│   }                    │     │        + criteria      │     │   ... },              │
+│ }                      │     │ （键名不在场）           │     │   "model": "jev-..." } │
+└────────────────────────┘     └────────────────────────┘     └────────────────────────┘
+        ▲                              ▲                              ▲
+   你在抓包里能看到的            只有 Jev 看到的                  键名"复活"仅供
+   全部内容                     部分（服务端内部表示）             model.py:127 拼键取答案
+```
+
+三个检查点的分工一句话：**① 有键名，是为了路由；② 无键名，模型只见内容；③ 键名还原，代码按图索骥。** 客户端对 ② 完全不可见、也不需要关心——它只需要信任契约：答案与键无关地"照题作答"，再被准确地送回自己命名的键下。
 
 ---
 
@@ -235,7 +288,7 @@ Authorization: Bearer <TYPESAFE_API_KEY>
 
 ## 5. 🔗 模型如何把 state 与 questions 关联起来
 
-这是最容易误解的一点：**模型根本看不到 "operation" / "click_target" 这些键名**（协议规定 keys aren't sent to the model），它们只服务于代码侧的路由（`model.py:127` 靠 `operation.lower() + "_target"` 拼键取答案）。模型不是"理解了字段含义"，而是在**阅读自然语言**。
+这是最容易误解的一点：**模型根本看不到 "operation" / "click_target" 这些键名**——键名虽随请求体发送到了服务器（见第 2 节注），但服务端构造模型输入时会将其剥离（协议规定 keys aren't sent to the model），它的用途只是让答案按原键路由回代码（`model.py:127` 靠 `operation.lower() + "_target"` 拼键取答案）。模型不是"理解了字段含义"，而是在**阅读自然语言**。
 
 ### 5.1 语义的三个载体
 
