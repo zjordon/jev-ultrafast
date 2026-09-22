@@ -70,25 +70,25 @@ Content-Type: application/json
 
 ```mermaid
 flowchart LR
-    subgraph Client ["客户端 · jev_ultrafast/model.py"]
-        A ["choose() 构建请求体"]
-        V ["validate_choice() 批卷<br/>+ 只消费选中头"]
+    subgraph S1["客户端 choose 方"]
+        A["choose() 构建请求体"]
+        V["validate_choice() 批卷<br/>只消费选中头"]
     end
-    subgraph Server ["TypeSafe 服务端"]
-        P ["解析 questions 映射"]
-        S ["剥离键名<br/>（留作路由 ID）"]
-        B ["重组模型输入<br/>（纯内容，无键名）"]
-        R ["答案按原键回填"]
+    subgraph S2["TypeSafe 服务端"]
+        P["解析 questions 映射"]
+        S["剥离键名 留作路由ID"]
+        B["重组模型输入 纯内容无键名"]
+        R["答案按原键回填"]
     end
-    subgraph JevModel ["Jev 模型"]
-        M ["阅读理解<br/>输出概率分布"]
+    subgraph S3["Jev 模型"]
+        M["阅读理解<br/>输出概率分布"]
     end
 
-    A -- "HTTP POST 完整 JSON<br/>（含 operation / click_target 等键名）" --> P
+    A -->|"HTTP POST 完整JSON<br/>含 operation click_target 等键名"| P
     P --> S --> B
-    B -- "state + 各题 instructions / criteria<br/>（键名不在场）" --> M
-    M -- "每题 choice + probabilities + confidence" --> R
-    R -- "HTTP 响应 answers<br/>（键名已还原）" --> V
+    B -->|"state 与各题 instructions criteria<br/>键名不在场"| M
+    M -->|"每题 choice probabilities confidence"| R
+    R -->|"HTTP 响应 answers<br/>键名已还原"| V
 ```
 
 同一份数据在三个检查点的形态对照：
@@ -119,22 +119,22 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    subgraph Client2 ["客户端 · jev_ultrafast/model.py"]
-        A2 ["field_text() 构建 messages<br/>（system=TEXT_VALUE + user=context）"]
-        V2 ["json.loads + 严格校验<br/>必须恰为 {text: str}"]
+    subgraph T1["客户端 field_text 方"]
+        A2["field_text 构建 messages<br/>system 题为 TEXT_VALUE<br/>user 题为 context JSON"]
+        V2["json 解析加严格校验<br/>必须恰为单键 text 字符串"]
     end
-    subgraph Server2 ["OpenAI 兼容服务端"]
-        P2 ["套聊天模板<br/>（加 role 标记等轻量渲染）"]
-        R2 ["包一层 choices[0]<br/>.message.content"]
+    subgraph T2["OpenAI 兼容服务端"]
+        P2["套聊天模板<br/>加 role 标记轻量渲染"]
+        R2["包一层响应壳<br/>choices 第0条 message content"]
     end
-    subgraph TextLLM ["文本模型"]
-        M2 ["自由文本生成<br/>（可选 json_object 约束）"]
+    subgraph T3["文本模型"]
+        M2["自由文本生成<br/>可选 json_object 约束"]
     end
 
-    A2 -- "HTTP POST 完整 JSON<br/>（messages 原样透传）" --> P2
-    P2 -- "你发的内容 ≈ 模型读的内容<br/>（无语义重组）" --> M2
-    M2 -- "一段补全文本" --> R2
-    R2 -- "HTTP 响应<br/>（content 是纯字符串）" --> V2
+    A2 -->|"HTTP POST 完整JSON<br/>messages 原样透传"| P2
+    P2 -->|"你发的内容约等于模型读的内容<br/>无语义重组"| M2
+    M2 -->|"一段补全文本"| R2
+    R2 -->|"HTTP 响应<br/>content 是纯字符串"| V2
 ```
 
 三个检查点的形态对照（与 2.1 并排看）：
