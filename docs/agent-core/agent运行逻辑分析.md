@@ -278,7 +278,7 @@ stateDiagram-v2
 
 ### 5.1 LLM 交互层（决策 + 文本，两套模型）
 
-> 协议细节、完整请求/响应实例与字段固定性分析见 [TypeSafe协议交互详解.md](./TypeSafe协议交互详解.md)。
+> 协议细节、完整请求/响应实例与字段固定性分析见 [TypeSafe协议交互详解.md](./TypeSafe协议交互详解.md)；两套模型如何联动（TYPE_TEXT 接力、下拉摊平、不支持的动作）见 [双模型联动机制.md](./双模型联动机制.md)。
 
 - **TypeSafe Jev（决策）**：`model.choose()`（L81-148）把页面状态（url/title/可见文本 6000 字符/元素表/最近 10 条动作）与多个 choice 型问题（operation + `<op>_target` 头）打包为一次 `POST https://api.typesafe.ai/v1/systemone`；`post_json`（L15-27）对 429/529/503 指数退避重试 3 次（0.5s→1s→2s），其余错误立即抛 RuntimeError，**不带副作用**。
 - **文本助手（生成）**：`model.field_text()`（L160-198）仅在 `TYPE_TEXT` 时调用，OpenAI 兼容 `/chat/completions`，强制 `response_format=json_object`，输出必须恰为 `{"text": str}` 且非空 ≤2000 字符；缺 `TEXT_MODEL_API_KEY` 直接抛错，代码绝不猜值。
