@@ -34,6 +34,40 @@
 
 **已被 jev-ultrafast 验证可直接平移的能力**：索引化动作空间（browser-use DOM mode 本来就是）、代码拥有执行（其 `actor/element.py` 同样是 CDP 直取真实元素）、一次请求多决策（fan-out 泛化性好）、新鲜度守卫/写前日志（与协议无关的工程质量）。browser-use 主项目自身也在向该方向收敛（CDP actor、元素索引、skills 化）。
 
+### 2.1 状态获取架构：两条路线的争论与合成方案
+
+**两条路线的实际形态**：
+
+| | browser-use（重装备） | jev-ultrafast（轻装备） |
+|---|---|---|
+| 采集 | 三源：每帧 AX 树（getFullAXTree）+ DOM 快照树 + computed styles/绘制信息 | 一次 `Runtime.evaluate` 执行 107 行 snapshot.js |
+| 过滤 | Python 侧五步：父链可见性 → ClickableElementDetector 交互启发 → PaintOrderRemover 矩形并集去遮挡 → 分页按钮等启发 → 序列化裁剪 | 页面内同步完成：querySelectorAll 筛选 → checkVisibility 原生可见性 → role 白名单 + 名称解析链 |
+| 输出 | 全量丰富上下文（服务生成式 LLM） | 有界候选集（≤250 动作 + ≤6000 字符文本，服务分类器） |
+
+**jev 敢简化的六个考虑**：①延迟预算是立项目标（旧版 1,092 次协议调用 → 101 次；Jev 决策中位仅 178ms，采集不能反客为主）；②原子性（单次求值无撕裂，无需跨源 reconciler）；③守卫同源（marker/page_key/guards 同一份快照产出，指纹天然确定）；④消费端适配（choice 协议 ≤255 选项，分类器要"少而干净"）；⑤**严谨性重新分配到执行侧**——browser-use 在采集时保证可点（paint order 去遮挡），jev 在点击瞬间裁决（elementFromPoint 命中测试，几何永远即时，更便宜更准确）；⑥简化是带失败教训迭代出来的（第一个 direct-DOM 候选 8.697s 因名称提取不完整校验失败 → 补全解析链 → 单次求值架构未变）。
+
+**对"信息错 → 决策必错"质疑的回应**：
+
+- "三源五步"≠更准确：ClickableDetector 用类名启发猜交互性、paint order 在 transform/动画下出错、AX+DOM 融合器本身是 bug 面——启发式误过滤是**静默错误**（模型永远看不到被误删的元素，无补救）；jev 的选择器是语法级精确判定，可见性用浏览器原生渲染权威（checkVisibility）。
+- 错误传播链有三道防线：执行时裁决（StalePage 拦截，错误输入不变成错误执行）→ 无进展止损（3 步无变化 → blocked）→ 低 confidence 可观测（候选被污染时分布摊平）。
+- **质疑真正成立的四个场景**：名称解析盲区（非完整 accname 规范，复杂 ARIA 链解析出空名/错名）；shadow DOM/iframe 缺失（信息缺失 = 错误世界图景，可能误判 BLOCKED）；250 截断（目标元素恰在第 251 位后）；烂 ARIA 页面（**所有 DOM 方案的共同上限**，视觉模型才是补丁——jev 是"默认不用"截图而非抛弃）。
+
+**"JS 方案被证明有性能问题"的史实修正**：early browser-use 的 buildDomTree.js 确实在大页面上栽过跟头，但慢在**算法**不在执行环境——全树遍历（不只交互候选）、逐元素 getBoundingClientRect+getComputedStyle 的 **layout thrashing**、兆级序列化 payload、每步全量重跑；且 `checkVisibility`（Chrome 105+，2022）在它写那版 JS 时还不存在，是时代工具差。**反证：两个项目的迁徙方向相反**（browser-use: JS → CDP 原生树；jev: 读 AX 树 → JS 一次原子读，1,092→101），各自优化成本模型的不同轴：
+
+```text
+采集总成本 = 单次采集成本 × 调用次数 × 失效率
+               ↑ browser-use 优化           ↑ jev 优化
+```
+
+browser-use 转向原生树最硬的理由是**覆盖**而非性能：closed shadow root、跨域 iframe 是页面内 JS 结构性进不去的，AX 树的 accessible name 是浏览器自己的完整规范实现。
+
+**合成方案（全功能版的状态获取）**：
+
+1. **快速路径**：页面内 JS 一次求值（本视口交互候选 + checkVisibility + 有界输出）——jev 现状，保持；
+2. **深路径**：CDP `captureSnapshot`/AX 树原生 API 采集 frames/shadow DOM 内容，每步一两次往返，浏览器内算好名字与可见性；
+3. 两路合并进**同一份动作空间与身份表**，守卫沿用语义指纹；
+4. 吸收两边教训：不重演 buildDomTree 的全量遍历与手工样式查询，也不重演 jev 旧版的重复读与变更失效。
+
 ---
 
 ## 3. ⛰️ 难点分级
@@ -58,7 +92,7 @@
 
 ### B 级：工程量难点（可解，但贵）
 
-**B1 帧感知动作空间**：jev 的 snapshot.js 明确不进 iframe/shadow DOM；需把 WeakMap 身份表推广为"帧路径+节点 id"复合身份，四层守卫全部跟着复杂化。
+**B1 帧感知动作空间**：jev 的 snapshot.js 明确不进 iframe/shadow DOM；需把 WeakMap 身份表推广为"帧路径+节点 id"复合身份，四层守卫全部跟着复杂化。具体实现按 2.1 的合成方案：快速路径保留页面内 JS，深路径用 CDP 原生树覆盖 frames/shadow DOM。
 
 **B2 255 选项上限 vs 真实页面**：choice 协议单题 ≤255 选项；需**分层动作空间**（视口分区→区域内元素）——两次请求或多层 fan-out；elements×描述的 token 体积膨胀。
 
@@ -115,7 +149,7 @@ browser-use、Skyvern、UI-TARS（字节）、Claude Computer Use、OpenAI Opera
 
 1. 保留 jev 内核，泛化**参数类型系统**（每类参数一个"值生成器+校验器"接口：text/url/enum/file/structured）；
 2. **分层动作空间**（两级选择，或多层 fan-out）；
-3. **帧感知快照**（snapshot.js 推广为帧遍历）；
+3. **帧感知快照**：按 2.1 合成方案实现——快速路径保留页面内 JS，深路径用 CDP `captureSnapshot`/AX 树覆盖 frames/shadow DOM，合并进同一动作空间与身份表；
 4. **双流架构定型**：控制流=choice，内容流=generation-as-data；
 5. **规则库 + 规则路由**（规则选择本身是 choice）；
 6. **choice provider 抽象**（TypeSafe | logprobs 模拟，消除锁定）；
