@@ -1,0 +1,2137 @@
+{
+ "rootId": "181",
+ "map": {
+  "0": {
+   "tagName": "span",
+   "attributes": {
+    "role": "img",
+    "class": "douyin-creator-master-icon douyin-creator-master-icon-default"
+   },
+   "children": [],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 2,
+   "extra": null
+  },
+  "1": {
+   "type": "TEXT_NODE",
+   "text": "作品发布",
+   "isVisible": true
+  },
+  "2": {
+   "tagName": "span",
+   "attributes": {
+    "id": "douyin-creator-master-side-upload",
+    "class": "header-button-text-Ww8aQU"
+   },
+   "children": [
+    "1"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 4,
+   "extra": null
+  },
+  "3": {
+   "tagName": "span",
+   "attributes": {
+    "role": "img",
+    "class": "douyin-creator-master-icon douyin-creator-master-icon-default"
+   },
+   "children": [],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 5,
+   "extra": null
+  },
+  "4": {
+   "tagName": "div",
+   "attributes": {
+    "class": "header-button-content-qUk9Uk"
+   },
+   "children": [
+    "2",
+    "3"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 3,
+   "extra": null
+  },
+  "5": {
+   "tagName": "span",
+   "attributes": {
+    "class": "douyin-creator-master-button-content",
+    "x-semi-prop": "children"
+   },
+   "children": [
+    "0",
+    "4"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 1,
+   "extra": null
+  },
+  "6": {
+   "tagName": "button",
+   "attributes": {
+    "aria-haspopup": "true",
+    "tabindex": "0",
+    "class": "douyin-creator-master-button douyin-creator-master-button-primary douyin-creator-master-button-size-large douyin-creator-master-button-block douyin-creator-master-button-solid header-button-KP2xn1",
+    "type": "button",
+    "aria-disabled": "false",
+    "aria-describedby": "wgyh410",
+    "data-popupid": "wgyh410",
+    "style": "margin: 0px;"
+   },
+   "children": [
+    "5"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 0,
+   "extra": null
+  },
+  "7": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "6"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "8": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "7"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "9": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "8"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "10": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "9"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "11": {
+   "tagName": "span",
+   "attributes": {
+    "role": "img",
+    "class": "douyin-creator-master-icon douyin-creator-master-icon-default"
+   },
+   "children": [],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 9,
+   "extra": null
+  },
+  "12": {
+   "tagName": "i",
+   "attributes": {
+    "class": "douyin-creator-master-navigation-item-icon douyin-creator-master-navigation-item-icon-info"
+   },
+   "children": [
+    "11"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 8,
+   "extra": null
+  },
+  "13": {
+   "type": "TEXT_NODE",
+   "text": "首页",
+   "isVisible": true
+  },
+  "14": {
+   "tagName": "span",
+   "attributes": {
+    "class": "douyin-creator-master-navigation-item-text"
+   },
+   "children": [
+    "13"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 10,
+   "extra": null
+  },
+  "15": {
+   "tagName": "i",
+   "attributes": {},
+   "children": [],
+   "isVisible": false,
+   "extra": null
+  },
+  "16": {
+   "tagName": "li",
+   "attributes": {
+    "role": "menuitem",
+    "tabindex": "0",
+    "aria-disabled": "false",
+    "class": "douyin-creator-master-navigation-item-normal douyin-creator-master-navigation-item",
+    "id": "douyin-creator-master-menu-nav-home"
+   },
+   "children": [
+    "12",
+    "14",
+    "15"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 7,
+   "extra": null
+  },
+  "17": {
+   "tagName": "span",
+   "attributes": {
+    "role": "img",
+    "class": "douyin-creator-master-icon douyin-creator-master-icon-default"
+   },
+   "children": [],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 13,
+   "extra": null
+  },
+  "18": {
+   "tagName": "i",
+   "attributes": {
+    "class": "douyin-creator-master-navigation-item-icon douyin-creator-master-navigation-item-icon-info"
+   },
+   "children": [
+    "17"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 12,
+   "extra": null
+  },
+  "19": {
+   "type": "TEXT_NODE",
+   "text": "内容管理",
+   "isVisible": true
+  },
+  "20": {
+   "tagName": "span",
+   "attributes": {
+    "class": "douyin-creator-master-navigation-item-text"
+   },
+   "children": [
+    "19"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 14,
+   "extra": null
+  },
+  "21": {
+   "tagName": "i",
+   "attributes": {},
+   "children": [],
+   "isVisible": false,
+   "extra": null
+  },
+  "22": {
+   "tagName": "li",
+   "attributes": {
+    "role": "menuitem",
+    "tabindex": "0",
+    "aria-disabled": "false",
+    "class": "douyin-creator-master-navigation-item-normal douyin-creator-master-navigation-item",
+    "id": "douyin-creator-master-menu-nav-content"
+   },
+   "children": [
+    "18",
+    "20",
+    "21"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 11,
+   "extra": null
+  },
+  "23": {
+   "tagName": "span",
+   "attributes": {
+    "role": "img",
+    "class": "douyin-creator-master-icon douyin-creator-master-icon-default"
+   },
+   "children": [],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 17,
+   "extra": null
+  },
+  "24": {
+   "tagName": "i",
+   "attributes": {
+    "class": "douyin-creator-master-navigation-item-icon douyin-creator-master-navigation-item-icon-info"
+   },
+   "children": [
+    "23"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 16,
+   "extra": null
+  },
+  "25": {
+   "type": "TEXT_NODE",
+   "text": "数据中心",
+   "isVisible": true
+  },
+  "26": {
+   "tagName": "span",
+   "attributes": {
+    "class": "douyin-creator-master-navigation-item-text"
+   },
+   "children": [
+    "25"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 18,
+   "extra": null
+  },
+  "27": {
+   "tagName": "i",
+   "attributes": {},
+   "children": [],
+   "isVisible": false,
+   "extra": null
+  },
+  "28": {
+   "tagName": "li",
+   "attributes": {
+    "role": "menuitem",
+    "tabindex": "0",
+    "aria-disabled": "false",
+    "class": "douyin-creator-master-navigation-item-normal douyin-creator-master-navigation-item",
+    "id": "douyin-creator-master-menu-nav-data-center"
+   },
+   "children": [
+    "24",
+    "26",
+    "27"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 15,
+   "extra": null
+  },
+  "29": {
+   "tagName": "span",
+   "attributes": {
+    "role": "img",
+    "class": "douyin-creator-master-icon douyin-creator-master-icon-default"
+   },
+   "children": [],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 21,
+   "extra": null
+  },
+  "30": {
+   "tagName": "i",
+   "attributes": {
+    "class": "douyin-creator-master-navigation-item-icon douyin-creator-master-navigation-item-icon-info"
+   },
+   "children": [
+    "29"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 20,
+   "extra": null
+  },
+  "31": {
+   "type": "TEXT_NODE",
+   "text": "收入变现",
+   "isVisible": true
+  },
+  "32": {
+   "tagName": "span",
+   "attributes": {
+    "class": "douyin-creator-master-navigation-item-text"
+   },
+   "children": [
+    "31"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 22,
+   "extra": null
+  },
+  "33": {
+   "tagName": "i",
+   "attributes": {},
+   "children": [],
+   "isVisible": false,
+   "extra": null
+  },
+  "34": {
+   "tagName": "li",
+   "attributes": {
+    "role": "menuitem",
+    "tabindex": "0",
+    "aria-disabled": "false",
+    "class": "douyin-creator-master-navigation-item-normal douyin-creator-master-navigation-item",
+    "id": "douyin-creator-master-menu-nav-cash"
+   },
+   "children": [
+    "30",
+    "32",
+    "33"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 19,
+   "extra": null
+  },
+  "35": {
+   "tagName": "span",
+   "attributes": {
+    "role": "img",
+    "class": "douyin-creator-master-icon douyin-creator-master-icon-large"
+   },
+   "children": [],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 27,
+   "extra": null
+  },
+  "36": {
+   "tagName": "i",
+   "attributes": {
+    "class": "douyin-creator-master-navigation-item-icon douyin-creator-master-navigation-item-icon-info"
+   },
+   "children": [
+    "35"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 26,
+   "extra": null
+  },
+  "37": {
+   "type": "TEXT_NODE",
+   "text": "创作服务",
+   "isVisible": true
+  },
+  "38": {
+   "tagName": "span",
+   "attributes": {
+    "class": "douyin-creator-master-navigation-item-text"
+   },
+   "children": [
+    "37"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 28,
+   "extra": null
+  },
+  "39": {
+   "tagName": "i",
+   "attributes": {
+    "class": "douyin-creator-master-navigation-item-icon douyin-creator-master-navigation-item-icon-toggle-right"
+   },
+   "children": [],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 29,
+   "extra": null
+  },
+  "40": {
+   "tagName": "div",
+   "attributes": {
+    "class": "douyin-creator-master-navigation-item-inner"
+   },
+   "children": [
+    "36",
+    "38",
+    "39"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 25,
+   "extra": null
+  },
+  "41": {
+   "tagName": "div",
+   "attributes": {
+    "role": "menuitem",
+    "tabindex": "0",
+    "class": "douyin-creator-master-navigation-sub-title",
+    "aria-expanded": "false"
+   },
+   "children": [
+    "40"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 24,
+   "extra": null
+  },
+  "42": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [],
+   "isVisible": false,
+   "extra": null
+  },
+  "43": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "42"
+   ],
+   "isVisible": false,
+   "extra": null
+  },
+  "44": {
+   "tagName": "li",
+   "attributes": {
+    "tabindex": "-1",
+    "aria-disabled": "false",
+    "aria-expanded": "false",
+    "class": "douyin-creator-master-navigation-sub-wrap douyin-creator-master-navigation-item douyin-creator-master-navigation-item-sub",
+    "id": "douyin-creator-master-menu-nav-creative_service"
+   },
+   "children": [
+    "41",
+    "43"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 23,
+   "extra": null
+  },
+  "45": {
+   "tagName": "ul",
+   "attributes": {
+    "role": "menu",
+    "aria-orientation": "vertical",
+    "class": "douyin-creator-master-navigation-list"
+   },
+   "children": [
+    "16",
+    "22",
+    "28",
+    "34",
+    "44"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 6,
+   "extra": null
+  },
+  "46": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "45"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "47": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "10",
+    "46"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "48": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "47"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "49": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "48"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "50": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "49"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "51": {
+   "tagName": "aside",
+   "attributes": {},
+   "children": [
+    "50"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "52": {
+   "tagName": "img",
+   "attributes": {
+    "class": "logo-ShG9Pe logo-full-iF13rv",
+    "src": "//lf-fe-creator.douyinstatic.com/obj/douyn-creator-scm-cdn/douyin-creator-master-new/static/image/douyin-creator-logo-v2.4df2b1a4.png",
+    "alt": ""
+   },
+   "children": [],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 31,
+   "extra": null
+  },
+  "53": {
+   "tagName": "img",
+   "attributes": {},
+   "children": [],
+   "isVisible": false,
+   "extra": null
+  },
+  "54": {
+   "tagName": "span",
+   "attributes": {},
+   "children": [
+    "52",
+    "53"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "55": {
+   "tagName": "div",
+   "attributes": {
+    "class": "logo-wrapper-LlqLQ5"
+   },
+   "children": [
+    "54"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 30,
+   "extra": null
+  },
+  "56": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "55"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "57": {
+   "tagName": "span",
+   "attributes": {
+    "role": "img",
+    "class": "douyin-creator-master-icon douyin-creator-master-icon-default ai-navigation-home-icon-h5GWMx"
+   },
+   "children": [],
+   "isVisible": true,
+   "isTopElement": false,
+   "extra": null
+  },
+  "58": {
+   "type": "TEXT_NODE",
+   "text": "首页",
+   "isVisible": true
+  },
+  "59": {
+   "tagName": "button",
+   "attributes": {
+    "type": "button",
+    "data-active": "true",
+    "class": "ai-navigation-item-K26YcB active-W8p63s"
+   },
+   "children": [
+    "57",
+    "58"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 32,
+   "extra": null
+  },
+  "60": {
+   "type": "TEXT_NODE",
+   "text": "AI分身",
+   "isVisible": true
+  },
+  "61": {
+   "tagName": "button",
+   "attributes": {
+    "type": "button",
+    "class": "ai-navigation-item-K26YcB"
+   },
+   "children": [
+    "60"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 33,
+   "extra": null
+  },
+  "62": {
+   "type": "TEXT_NODE",
+   "text": "随变",
+   "isVisible": true
+  },
+  "63": {
+   "tagName": "button",
+   "attributes": {
+    "type": "button",
+    "class": "ai-navigation-item-K26YcB"
+   },
+   "children": [
+    "62"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 34,
+   "extra": null
+  },
+  "64": {
+   "type": "TEXT_NODE",
+   "text": "世界书",
+   "isVisible": true
+  },
+  "65": {
+   "tagName": "button",
+   "attributes": {
+    "type": "button",
+    "class": "ai-navigation-item-K26YcB"
+   },
+   "children": [
+    "64"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 35,
+   "extra": null
+  },
+  "66": {
+   "type": "TEXT_NODE",
+   "text": "AI工坊",
+   "isVisible": true
+  },
+  "67": {
+   "tagName": "button",
+   "attributes": {
+    "type": "button",
+    "class": "ai-navigation-item-K26YcB"
+   },
+   "children": [
+    "66"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 36,
+   "extra": null
+  },
+  "68": {
+   "tagName": "nav",
+   "attributes": {},
+   "children": [
+    "59",
+    "61",
+    "63",
+    "65",
+    "67"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "69": {
+   "tagName": "div",
+   "attributes": {
+    "class": "avatar-fhpFB1",
+    "style": "background-image: url(\"https://p11.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_862ca7ab42d42c18e71117cd8624aa51.jpeg?from=2956013662\"), url(\"//sf3-cdn-tos.douyinstatic.com/img/mosaic-legacy/3793/3131589739~120x256.image\"); background-size: cover;"
+   },
+   "children": [],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 38,
+   "extra": null
+  },
+  "70": {
+   "tagName": "div",
+   "attributes": {
+    "id": "header-avatar",
+    "class": "dropdown-wrapper-sdUW26 avatar-wrapper-DIbwVi",
+    "aria-haspopup": "true",
+    "tabindex": "0",
+    "aria-describedby": "7uq3uxb",
+    "data-popupid": "7uq3uxb"
+   },
+   "children": [
+    "69"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 37,
+   "extra": null
+  },
+  "71": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "70"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "72": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "56",
+    "68",
+    "71"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "73": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [],
+   "isVisible": true,
+   "isTopElement": false,
+   "extra": null
+  },
+  "74": {
+   "type": "TEXT_NODE",
+   "text": "抖音创作者中心",
+   "isVisible": false
+  },
+  "75": {
+   "tagName": "title",
+   "attributes": {},
+   "children": [
+    "74"
+   ],
+   "isVisible": false,
+   "extra": null
+  },
+  "76": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "75"
+   ],
+   "isVisible": false,
+   "extra": null
+  },
+  "77": {
+   "type": "TEXT_NODE",
+   "text": "发布视频",
+   "isVisible": true
+  },
+  "78": {
+   "tagName": "div",
+   "attributes": {
+    "class": "tab-item-BcCLTS active-i8Pu0m"
+   },
+   "children": [
+    "77"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 39,
+   "extra": null
+  },
+  "79": {
+   "type": "TEXT_NODE",
+   "text": "发布图文",
+   "isVisible": true
+  },
+  "80": {
+   "tagName": "div",
+   "attributes": {
+    "class": "tab-item-BcCLTS"
+   },
+   "children": [
+    "79"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 40,
+   "extra": null
+  },
+  "81": {
+   "type": "TEXT_NODE",
+   "text": "发布全景视频",
+   "isVisible": true
+  },
+  "82": {
+   "tagName": "div",
+   "attributes": {
+    "class": "tab-item-BcCLTS"
+   },
+   "children": [
+    "81"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 41,
+   "extra": null
+  },
+  "83": {
+   "type": "TEXT_NODE",
+   "text": "发布文章",
+   "isVisible": true
+  },
+  "84": {
+   "tagName": "div",
+   "attributes": {
+    "class": "tab-item-BcCLTS"
+   },
+   "children": [
+    "83"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 42,
+   "extra": null
+  },
+  "85": {
+   "type": "TEXT_NODE",
+   "text": "了解上传规则详情",
+   "isVisible": true
+  },
+  "86": {
+   "tagName": "a",
+   "attributes": {
+    "class": "learn-link-cmfbHv",
+    "href": "https://creator.douyin.com/creator-micro/content/quality_statement?enter_method=click",
+    "target": "_blank",
+    "rel": "noreferrer"
+   },
+   "children": [
+    "85"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 43,
+   "extra": null
+  },
+  "87": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "86"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "88": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "78",
+    "80",
+    "82",
+    "84",
+    "87"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "89": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [],
+   "isVisible": false,
+   "extra": null
+  },
+  "90": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "91": {
+   "type": "TEXT_NODE",
+   "text": "视频大小和格式",
+   "isVisible": true
+  },
+  "92": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "91"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "93": {
+   "type": "TEXT_NODE",
+   "text": "支持投稿3小时以内、64G以内的视频，鼓励优质中长视频完整表达",
+   "isVisible": true
+  },
+  "94": {
+   "tagName": "span",
+   "attributes": {},
+   "children": [
+    "93"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "95": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "94"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "96": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "92",
+    "95"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "97": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "90",
+    "96"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "98": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "99": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "98"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "100": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "101": {
+   "type": "TEXT_NODE",
+   "text": "视频画质",
+   "isVisible": true
+  },
+  "102": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "101"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "103": {
+   "type": "TEXT_NODE",
+   "text": "支持投稿4K视频，让好内容以更高清的方式被看见，并有机会入选抖音精选",
+   "isVisible": true
+  },
+  "104": {
+   "tagName": "span",
+   "attributes": {},
+   "children": [
+    "103"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "105": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "104"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "106": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "102",
+    "105"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "107": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "100",
+    "106"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "108": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "109": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "108"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "110": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "111": {
+   "type": "TEXT_NODE",
+   "text": "视频画幅",
+   "isVisible": true
+  },
+  "112": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "111"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "113": {
+   "type": "TEXT_NODE",
+   "text": "建议上传宽高比为16:9、9:16、3:4、4:3、9:19.5（5.8寸）的视频",
+   "isVisible": true
+  },
+  "114": {
+   "tagName": "span",
+   "attributes": {},
+   "children": [
+    "113"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "115": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "114"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "116": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "112",
+    "115"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "117": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "110",
+    "116"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "118": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [],
+   "isVisible": false,
+   "extra": null
+  },
+  "119": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "89",
+    "97",
+    "99",
+    "107",
+    "109",
+    "117",
+    "118"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "120": {
+   "tagName": "img",
+   "attributes": {
+    "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTIiIGhlaWdodD0iNTIiIHZpZXdCb3g9IjAgMCA1MiA1MiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMC42MTU0IDIwLjM1M0MxMC42MTU0IDIwLjM4NDIgMTAuNjE1NSAyMC40MTU0IDEwLjYxNTcgMjAuNDQ2NkM1LjY4MDUyIDIyLjI5MTIgMi4xNjY2NCAyNy4wNDkxIDIuMTY2NjQgMzIuNjI3N0MyLjE2NjY0IDM5LjgwNzQgNy45ODY5MyA0NS42Mjc3IDE1LjE2NjYgNDUuNjI3N0gyMS44MzQ2VjMxLjM5NTlMMTguNjk4IDM0LjUzMjZDMTcuMzEzNCAzNS45MTcxIDE1LjA2ODUgMzUuOTE3MSAxMy42ODM5IDM0LjUzMjZDMTIuMjk5NCAzMy4xNDggMTIuMjk5NCAzMC45MDMxIDEzLjY4MzkgMjkuNTE4NUwyMC44MzM2IDIyLjM2ODlDMjMuMzQ2MyAxOS44NTYxIDI3LjQyMDMgMTkuODU2MSAyOS45MzMxIDIyLjM2ODlMMzcuMDgyOCAyOS41MTg1QzM4LjQ2NzMgMzAuOTAzMSAzOC40NjczIDMzLjE0OCAzNy4wODI4IDM0LjUzMjZDMzUuNjk4MiAzNS45MTcxIDMzLjQ1MzMgMzUuOTE3MSAzMi4wNjg3IDM0LjUzMjZMMjguOTI1NiAzMS4zODk0VjQ1LjYyNzdIMzYuODMzM0M0NC4wMTMgNDUuNjI3NyA0OS44MzMzIDM5LjgwNzQgNDkuODMzMyAzMi42Mjc3QzQ5LjgzMzMgMjYuMDM0NyA0NC45MjU0IDIwLjU4OCAzOC41NjM3IDE5Ljc0MTlDMzguMjQzOCAxMi4zMDQgMzIuMTEyNyA2LjM3MjI1IDI0LjU5NjEgNi4zNzIyNUMxNi44NzQ4IDYuMzcyMjUgMTAuNjE1NCAxMi42MzE2IDEwLjYxNTQgMjAuMzUzWiIgZmlsbD0idXJsKCNwYWludDBfbGluZWFyXzIyNl81NjQyKSIvPgo8bWFzayBpZD0icGF0aC0yLWluc2lkZS0xXzIyNl81NjQyIiBmaWxsPSJ3aGl0ZSI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNNDkuNjgyMyAzMi40MDM5QzQ5LjY4MjMgMzkuNzA3MiA0My43NjE3IDQ1LjYyNzcgMzYuNDU4NCA0NS42Mjc3TDM2LjQzODEgNDUuNjI3N0gyOC45MjU3VjMxLjM4OTRMMzIuMDY4OSAzNC41MzI2QzMzLjQ1MzUgMzUuOTE3MSAzNS42OTgzIDM1LjkxNzEgMzcuMDgyOSAzNC41MzI2QzM4LjQ2NzUgMzMuMTQ4IDM4LjQ2NzUgMzAuOTAzMSAzNy4wODI5IDI5LjUxODVMMjkuOTMzMyAyMi4zNjg5QzI5LjYxNzIgMjIuMDUyOCAyOS4yNzYzIDIxLjc3NjQgMjguOTE3IDIxLjUzOThDMzEuMDU2MSAyMC4wNTIyIDMzLjY1NTQgMTkuMTgwMSAzNi40NTg0IDE5LjE4MDFDNDMuNzYxNyAxOS4xODAxIDQ5LjY4MjMgMjUuMTAwNiA0OS42ODIzIDMyLjQwMzlaIi8+CjwvbWFzaz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik00OS42ODIzIDMyLjQwMzlDNDkuNjgyMyAzOS43MDcyIDQzLjc2MTcgNDUuNjI3NyAzNi40NTg0IDQ1LjYyNzdMMzYuNDM4MSA0NS42Mjc3SDI4LjkyNTdWMzEuMzg5NEwzMi4wNjg5IDM0LjUzMjZDMzMuNDUzNSAzNS45MTcxIDM1LjY5ODMgMzUuOTE3MSAzNy4wODI5IDM0LjUzMjZDMzguNDY3NSAzMy4xNDggMzguNDY3NSAzMC45MDMxIDM3LjA4MjkgMjkuNTE4NUwyOS45MzMzIDIyLjM2ODlDMjkuNjE3MiAyMi4wNTI4IDI5LjI3NjMgMjEuNzc2NCAyOC45MTcgMjEuNTM5OEMzMS4wNTYxIDIwLjA1MjIgMzMuNjU1NCAxOS4xODAxIDM2LjQ1ODQgMTkuMTgwMUM0My43NjE3IDE5LjE4MDEgNDkuNjgyMyAyNS4xMDA2IDQ5LjY4MjMgMzIuNDAzOVoiIGZpbGw9InVybCgjcGFpbnQxX2xpbmVhcl8yMjZfNTY0MikiLz4KPHBhdGggZD0iTTM2LjQ1ODQgNDUuNjI3N0wzNi40NTggNDYuMTAwNUgzNi40NTg0VjQ1LjYyNzdaTTM2LjQzODEgNDUuNjI3N0wzNi40Mzg1IDQ1LjE1NUgzNi40MzgxVjQ1LjYyNzdaTTI4LjkyNTcgNDUuNjI3N0gyOC40NTNWNDYuMTAwNUgyOC45MjU3VjQ1LjYyNzdaTTI4LjkyNTcgMzEuMzg5NEwyOS4yNiAzMS4wNTUxTDI4LjQ1MyAzMC4yNDgxVjMxLjM4OTRIMjguOTI1N1pNMzIuMDY4OSAzNC41MzI2TDMyLjQwMzIgMzQuMTk4M0gzMi40MDMyTDMyLjA2ODkgMzQuNTMyNlpNMzcuMDgyOSAyOS41MTg1TDM2Ljc0ODcgMjkuODUyOEwzNy4wODI5IDI5LjUxODVaTTI5LjkzMzMgMjIuMzY4OUwyOS41OTkgMjIuNzAzMkgyOS41OTlMMjkuOTMzMyAyMi4zNjg5Wk0yOC45MTcgMjEuNTM5OEwyOC42NDcxIDIxLjE1MTdMMjguMDczNiAyMS41NTA1TDI4LjY1NyAyMS45MzQ2TDI4LjkxNyAyMS41Mzk4Wk0zNi40NTg0IDQ2LjEwMDVDNDQuMDIyOCA0Ni4xMDA1IDUwLjE1NSAzOS45NjgzIDUwLjE1NSAzMi40MDM5SDQ5LjIwOTVDNDkuMjA5NSAzOS40NDYxIDQzLjUwMDcgNDUuMTU1IDM2LjQ1ODQgNDUuMTU1VjQ2LjEwMDVaTTM2LjQzNzcgNDYuMTAwNUwzNi40NTggNDYuMTAwNUwzNi40NTg4IDQ1LjE1NUwzNi40Mzg1IDQ1LjE1NUwzNi40Mzc3IDQ2LjEwMDVaTTI4LjkyNTcgNDYuMTAwNUgzNi40MzgxVjQ1LjE1NUgyOC45MjU3VjQ2LjEwMDVaTTI5LjM5ODUgNDUuNjI3N1YzMS4zODk0SDI4LjQ1M1Y0NS42Mjc3SDI5LjM5ODVaTTI4LjU5MTUgMzEuNzIzN0wzMS43MzQ2IDM0Ljg2NjhMMzIuNDAzMiAzNC4xOTgzTDI5LjI2IDMxLjA1NTFMMjguNTkxNSAzMS43MjM3Wk0zMS43MzQ2IDM0Ljg2NjhDMzMuMzAzOCAzNi40MzYgMzUuODQ4IDM2LjQzNiAzNy40MTcyIDM0Ljg2NjhMMzYuNzQ4NyAzNC4xOTgzQzM1LjU0ODcgMzUuMzk4MyAzMy42MDMxIDM1LjM5ODMgMzIuNDAzMiAzNC4xOTgzTDMxLjczNDYgMzQuODY2OFpNMzcuNDE3MiAzNC44NjY4QzM4Ljk4NjQgMzMuMjk3NiAzOC45ODY0IDMwLjc1MzUgMzcuNDE3MiAyOS4xODQzTDM2Ljc0ODcgMjkuODUyOEMzNy45NDg2IDMxLjA1MjggMzcuOTQ4NiAzMi45OTgzIDM2Ljc0ODcgMzQuMTk4M0wzNy40MTcyIDM0Ljg2NjhaTTM3LjQxNzIgMjkuMTg0M0wzMC4yNjc2IDIyLjAzNDZMMjkuNTk5IDIyLjcwMzJMMzYuNzQ4NyAyOS44NTI4TDM3LjQxNzIgMjkuMTg0M1pNMzAuMjY3NiAyMi4wMzQ2QzI5LjkyODcgMjEuNjk1NyAyOS41NjI5IDIxLjM5OTEgMjkuMTc3IDIxLjE0NUwyOC42NTcgMjEuOTM0NkMyOC45ODk4IDIyLjE1MzcgMjkuMzA1NyAyMi40MDk4IDI5LjU5OSAyMi43MDMyTDMwLjI2NzYgMjIuMDM0NlpNMzYuNDU4NCAxOC43MDczQzMzLjU1NTggMTguNzA3MyAzMC44NjI4IDE5LjYxMDcgMjguNjQ3MSAyMS4xNTE3TDI5LjE4NjkgMjEuOTI3OUMzMS4yNDkzIDIwLjQ5MzYgMzMuNzU1IDE5LjY1MjggMzYuNDU4NCAxOS42NTI4VjE4LjcwNzNaTTUwLjE1NSAzMi40MDM5QzUwLjE1NSAyNC44Mzk1IDQ0LjAyMjggMTguNzA3MyAzNi40NTg0IDE4LjcwNzNWMTkuNjUyOEM0My41MDA3IDE5LjY1MjggNDkuMjA5NSAyNS4zNjE3IDQ5LjIwOTUgMzIuNDAzOUg1MC4xNTVaIiBmaWxsPSJ1cmwoI3BhaW50Ml9saW5lYXJfMjI2XzU2NDIpIiBtYXNrPSJ1cmwoI3BhdGgtMi1pbnNpZGUtMV8yMjZfNTY0MikiLz4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0icGFpbnQwX2xpbmVhcl8yMjZfNTY0MiIgeDE9IjE2LjczMTMiIHkxPSI2LjM3MjI1IiB4Mj0iMzQuMDA3NCIgeTI9IjQ4LjMyNzgiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iI0RERERERCIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNBREFEQUQiLz4KPC9saW5lYXJHcmFkaWVudD4KPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDFfbGluZWFyXzIyNl81NjQyIiB4MT0iMzEuMzE1NiIgeTE9IjE5LjE4MDEiIHgyPSI0NC41Mzk1IiB5Mj0iNDUuNjI3NyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgo8c3RvcCBzdG9wLWNvbG9yPSIjREREREREIi8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0FEQURBRCIvPgo8L2xpbmVhckdyYWRpZW50Pgo8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50Ml9saW5lYXJfMjI2XzU2NDIiIHgxPSIzMS4zMTU2IiB5MT0iMTkuOTE0NyIgeDI9IjQzLjgwNDgiIHkyPSI0My40MjM4IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IndoaXRlIiBzdG9wLW9wYWNpdHk9IjAuNCIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM5OTk5OTkiIHN0b3Atb3BhY2l0eT0iMCIvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+Cjwvc3ZnPgo="
+   },
+   "children": [],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 47,
+   "extra": null
+  },
+  "121": {
+   "tagName": "div",
+   "attributes": {
+    "class": "container-drag-icon"
+   },
+   "children": [
+    "120"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 46,
+   "extra": null
+  },
+  "122": {
+   "type": "TEXT_NODE",
+   "text": "点击上传 或直接将视频文件拖入此区域",
+   "isVisible": true
+  },
+  "123": {
+   "tagName": "div",
+   "attributes": {
+    "class": "container-drag-title-UafWje"
+   },
+   "children": [
+    "122"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 48,
+   "extra": null
+  },
+  "124": {
+   "type": "TEXT_NODE",
+   "text": "为了更好的观看体验和平台安全，平台将对上传的视频预审。超过40秒的视频建议上传横版视频",
+   "isVisible": true
+  },
+  "125": {
+   "tagName": "div",
+   "attributes": {
+    "class": "container-drag-sub-title-Y0B74w"
+   },
+   "children": [
+    "124"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 49,
+   "extra": null
+  },
+  "126": {
+   "type": "TEXT_NODE",
+   "text": "上传",
+   "isVisible": true
+  },
+  "127": {
+   "type": "TEXT_NODE",
+   "text": "视频",
+   "isVisible": true
+  },
+  "128": {
+   "tagName": "span",
+   "attributes": {
+    "class": "semi-button-content-right"
+   },
+   "children": [
+    "126",
+    "127"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 53,
+   "extra": null
+  },
+  "129": {
+   "tagName": "span",
+   "attributes": {
+    "class": "semi-button-content"
+   },
+   "children": [
+    "128"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 52,
+   "extra": null
+  },
+  "130": {
+   "tagName": "button",
+   "attributes": {
+    "class": "semi-button semi-button-primary container-drag-btn-k6XmB4 semi-button-with-icon",
+    "type": "button"
+   },
+   "children": [
+    "129"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 51,
+   "extra": null
+  },
+  "131": {
+   "tagName": "img",
+   "attributes": {
+    "src": "data:image/png;base64,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",
+    "class": "container-drag-4k-tag-Et_EDe"
+   },
+   "children": [],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 54,
+   "extra": null
+  },
+  "132": {
+   "tagName": "div",
+   "attributes": {
+    "class": "container-drag-upload-tL99XD"
+   },
+   "children": [
+    "130",
+    "131"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 50,
+   "extra": null
+  },
+  "133": {
+   "tagName": "div",
+   "attributes": {
+    "class": "container-drag-info-efu4jl"
+   },
+   "children": [
+    "121",
+    "123",
+    "125",
+    "132"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 45,
+   "extra": null
+  },
+  "134": {
+   "tagName": "input",
+   "attributes": {
+    "accept": "video/x-flv,video/mp4,video/x-m4v,video/*,.flv,.avi,.wmv,.webm,.ts,.mp4,.mpeg4,.mov,.m4v,.mpg,.mkv,.m4",
+    "type": "file",
+    "tabindex": "-1",
+    "style": "border: 0px; clip: rect(0px, 0px, 0px, 0px); clip-path: inset(50%); height: 1px; margin: 0px -1px -1px 0px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
+   },
+   "children": [],
+   "isVisible": true,
+   "isTopElement": false,
+   "extra": null
+  },
+  "135": {
+   "tagName": "div",
+   "attributes": {
+    "class": "container-drag-VAfIfu",
+    "role": "presentation",
+    "tabindex": "0"
+   },
+   "children": [
+    "133",
+    "134"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 44,
+   "extra": null
+  },
+  "136": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "119",
+    "135"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "137": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "136"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "138": {
+   "tagName": "div",
+   "attributes": {
+    "role": "tab-panel",
+    "class": "semi-tabs-pane-active semi-tabs-pane",
+    "aria-hidden": "false"
+   },
+   "children": [
+    "137"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "139": {
+   "tagName": "div",
+   "attributes": {
+    "role": "tab-content",
+    "class": "semi-tabs-content semi-tabs-content-top"
+   },
+   "children": [
+    "138"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "140": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "139"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "141": {
+   "tagName": "img",
+   "attributes": {
+    "class": "banner-image",
+    "src": "//lf-fe-creator.douyinstatic.com/obj/douyn-creator-scm-cdn/douyin-creator-content-new/micro/static/image/cut.f485b645.png"
+   },
+   "children": [],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 63,
+   "extra": null
+  },
+  "142": {
+   "tagName": "div",
+   "attributes": {
+    "tabindex": "-1",
+    "style": "width: 100%; display: inline-block;"
+   },
+   "children": [
+    "141"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 62,
+   "extra": null
+  },
+  "143": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "142"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 61,
+   "extra": null
+  },
+  "144": {
+   "tagName": "div",
+   "attributes": {
+    "data-index": "0",
+    "class": "slick-slide slick-active slick-current",
+    "tabindex": "-1",
+    "aria-hidden": "false",
+    "style": "outline: none; width: 1241px;"
+   },
+   "children": [
+    "143"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 60,
+   "extra": null
+  },
+  "145": {
+   "tagName": "div",
+   "attributes": {
+    "class": "slick-track",
+    "style": "width: 1241px; opacity: 1; transform: translate3d(0px, 0px, 0px);"
+   },
+   "children": [
+    "144"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 59,
+   "extra": null
+  },
+  "146": {
+   "tagName": "div",
+   "attributes": {
+    "class": "slick-list"
+   },
+   "children": [
+    "145"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 58,
+   "extra": null
+  },
+  "147": {
+   "tagName": "div",
+   "attributes": {
+    "class": "slick-slider slick-initialized"
+   },
+   "children": [
+    "146"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 57,
+   "extra": null
+  },
+  "148": {
+   "tagName": "div",
+   "attributes": {
+    "class": "ant-carousel"
+   },
+   "children": [
+    "147"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 56,
+   "extra": null
+  },
+  "149": {
+   "tagName": "button",
+   "attributes": {
+    "class": "left-btn-sx9e2T button-khAxrH btn-fade-NmLx7I",
+    "type": "submit"
+   },
+   "children": [],
+   "isVisible": false,
+   "extra": null
+  },
+  "150": {
+   "tagName": "button",
+   "attributes": {
+    "class": "right-btn-r6VhLI button-khAxrH btn-fade-NmLx7I",
+    "type": "submit"
+   },
+   "children": [],
+   "isVisible": false,
+   "extra": null
+  },
+  "151": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [],
+   "isVisible": true,
+   "isTopElement": false,
+   "extra": null
+  },
+  "152": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "151"
+   ],
+   "isVisible": true,
+   "isTopElement": false,
+   "extra": null
+  },
+  "153": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "152"
+   ],
+   "isVisible": true,
+   "isTopElement": false,
+   "extra": null
+  },
+  "154": {
+   "tagName": "div",
+   "attributes": {
+    "class": "container-banner-cJL_w3"
+   },
+   "children": [
+    "148",
+    "149",
+    "150",
+    "153"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 55,
+   "extra": null
+  },
+  "155": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "154"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "156": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "88",
+    "140",
+    "155"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "157": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "156"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "158": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "157"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "159": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "158"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "160": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "76",
+    "159"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "161": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "160"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "162": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "161"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "163": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "162"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "164": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "72",
+    "73",
+    "163"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "165": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "51",
+    "164"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "166": {
+   "tagName": "span",
+   "attributes": {
+    "role": "img",
+    "class": "douyin-creator-master-icon douyin-creator-master-icon-default creator-help-icon-ZbpHXX"
+   },
+   "children": [],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 65,
+   "extra": null
+  },
+  "167": {
+   "type": "TEXT_NODE",
+   "text": "在线客服",
+   "isVisible": false
+  },
+  "168": {
+   "tagName": "button",
+   "attributes": {
+    "class": "creator-help-menu-item-u50ky5",
+    "type": "button"
+   },
+   "children": [
+    "167"
+   ],
+   "isVisible": false,
+   "extra": null
+  },
+  "169": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "168"
+   ],
+   "isVisible": false,
+   "extra": null
+  },
+  "170": {
+   "tagName": "div",
+   "attributes": {
+    "class": "creator-help-jukXpY",
+    "style": "visibility: visible;"
+   },
+   "children": [
+    "166",
+    "169"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": true,
+   "isInViewport": true,
+   "highlightIndex": 64,
+   "extra": null
+  },
+  "171": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "165",
+    "170"
+   ],
+   "isVisible": true,
+   "isTopElement": true,
+   "isInteractive": false,
+   "extra": null
+  },
+  "172": {
+   "tagName": "iframe",
+   "attributes": {
+    "src": "https://lf-zt.douyin.com/obj/uc-assets/zt/@byted/x-storage-web/4.0.5/dist/latest/index.html",
+    "style": "display: none;"
+   },
+   "children": [],
+   "isVisible": false,
+   "extra": null
+  },
+  "173": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "172"
+   ],
+   "isVisible": false,
+   "extra": null
+  },
+  "174": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [],
+   "isVisible": false,
+   "extra": null
+  },
+  "175": {
+   "tagName": "iframe",
+   "attributes": {
+    "src": "https://lf-zt.douyin.com/obj/uc-assets/zt/@byted/x-storage-web/4.0.5/dist/latest/index.html",
+    "style": "display: none;"
+   },
+   "children": [],
+   "isVisible": false,
+   "extra": null
+  },
+  "176": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "175"
+   ],
+   "isVisible": false,
+   "extra": null
+  },
+  "177": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [],
+   "isVisible": false,
+   "extra": null
+  },
+  "178": {
+   "tagName": "iframe",
+   "attributes": {
+    "id": "summon-web-iframe",
+    "class": "summon-iframe",
+    "src": "https://summon.bytedance.com/web/?header_toggle=true&host_app_version=&host_app_model=&sign_token=77c18589160e448f81e9dfb30b4ae2d9&channel=24&app_id=10001&im_extra=&entrance=IM2906-1&render_width=375&render_height=667&is_in_frame=1&from=https://creator.douyin.com"
+   },
+   "children": [],
+   "isVisible": false,
+   "extra": null
+  },
+  "179": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [
+    "177",
+    "178"
+   ],
+   "isVisible": false,
+   "extra": null
+  },
+  "180": {
+   "tagName": "div",
+   "attributes": {},
+   "children": [],
+   "isVisible": false,
+   "extra": null
+  },
+  "181": {
+   "tagName": "body",
+   "attributes": {},
+   "xpath": "/body",
+   "children": [
+    "171",
+    "173",
+    "174",
+    "176",
+    "179",
+    "180"
+   ]
+  }
+ }
+}

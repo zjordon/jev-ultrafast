@@ -1,0 +1,532 @@
+{
+ "url": "https://creator.douyin.com/creator-micro/content/upload",
+ "title": "抖音创作者中心",
+ "w": 1536,
+ "h": 674,
+ "text": "作品发布\n首页\n内容管理\n数据中心\n收入变现\n创作服务\n首页\nAI分身\n随变\n世界书\nAI工坊\n发布视频\n发布图文\n发布全景视频\n发布文章\n了解上传规则详情\n视频大小和格式\n支持投稿3小时以内、64G以内的视频，鼓励优质中长视频完整表达\n视频画质\n支持投稿4K视频，让好内容以更高清的方式被看见，并有机会入选抖音精选\n视频画幅\n建议上传宽高比为16:9、9:16、3:4、4:3、9:19.5（5.8寸）的视频\n点击上传 或直接将视频文件拖入此区域\n为了更好的观看体验和平台安全，平台将对上传的视频预审。超过40秒的视频建议上传横版视频\n上传\n视频",
+ "scroll": {
+  "y": 0,
+  "height": 925
+ },
+ "actions": [
+  {
+   "node": 1,
+   "role": "button",
+   "label": "作品发布",
+   "rect": {
+    "x": 24,
+    "y": 64,
+    "w": 152,
+    "h": 40
+   },
+   "kind": "click",
+   "value": "",
+   "id": "e1"
+  },
+  {
+   "node": 2,
+   "role": "menuitem",
+   "label": "首页",
+   "rect": {
+    "x": 24,
+    "y": 120,
+    "w": 152,
+    "h": 36
+   },
+   "kind": "click",
+   "value": "0",
+   "id": "e2"
+  },
+  {
+   "node": 3,
+   "role": "menuitem",
+   "label": "内容管理",
+   "rect": {
+    "x": 24,
+    "y": 168,
+    "w": 152,
+    "h": 36
+   },
+   "kind": "click",
+   "value": "0",
+   "id": "e3"
+  },
+  {
+   "node": 4,
+   "role": "menuitem",
+   "label": "数据中心",
+   "rect": {
+    "x": 24,
+    "y": 216,
+    "w": 152,
+    "h": 36
+   },
+   "kind": "click",
+   "value": "0",
+   "id": "e4"
+  },
+  {
+   "node": 5,
+   "role": "menuitem",
+   "label": "收入变现",
+   "rect": {
+    "x": 24,
+    "y": 264,
+    "w": 152,
+    "h": 36
+   },
+   "kind": "click",
+   "value": "0",
+   "id": "e5"
+  },
+  {
+   "node": 6,
+   "role": "menuitem",
+   "label": "创作服务",
+   "rect": {
+    "x": 24,
+    "y": 312,
+    "w": 152,
+    "h": 36
+   },
+   "expanded": "false",
+   "kind": "click",
+   "value": "",
+   "id": "e6"
+  },
+  {
+   "node": 7,
+   "role": "button",
+   "label": "首页",
+   "rect": {
+    "x": 568,
+    "y": 10,
+    "w": 62,
+    "h": 28
+   },
+   "kind": "click",
+   "value": "",
+   "id": "e7"
+  },
+  {
+   "node": 8,
+   "role": "button",
+   "label": "AI分身",
+   "rect": {
+    "x": 642,
+    "y": 10,
+    "w": 76,
+    "h": 28
+   },
+   "kind": "click",
+   "value": "",
+   "id": "e8"
+  },
+  {
+   "node": 9,
+   "role": "button",
+   "label": "随变",
+   "rect": {
+    "x": 730,
+    "y": 10,
+    "w": 62,
+    "h": 28
+   },
+   "kind": "click",
+   "value": "",
+   "id": "e9"
+  },
+  {
+   "node": 10,
+   "role": "button",
+   "label": "世界书",
+   "rect": {
+    "x": 804,
+    "y": 10,
+    "w": 76,
+    "h": 28
+   },
+   "kind": "click",
+   "value": "",
+   "id": "e10"
+  },
+  {
+   "node": 11,
+   "role": "button",
+   "label": "AI工坊",
+   "rect": {
+    "x": 892,
+    "y": 10,
+    "w": 76,
+    "h": 28
+   },
+   "kind": "click",
+   "value": "",
+   "id": "e11"
+  },
+  {
+   "node": 12,
+   "role": "link",
+   "label": "了解上传规则详情",
+   "rect": {
+    "x": 1370.800048828125,
+    "y": 108,
+    "w": 96,
+    "h": 16
+   },
+   "kind": "click",
+   "value": "",
+   "id": "e12"
+  },
+  {
+   "node": 13,
+   "role": "button",
+   "label": "上传 视频",
+   "rect": {
+    "x": 704.4000244140625,
+    "y": 484.3000183105469,
+    "w": 312,
+    "h": 40
+   },
+   "kind": "click",
+   "value": "",
+   "id": "e13"
+  },
+  {
+   "id": "scroll_down",
+   "kind": "scroll",
+   "label": "Scroll down",
+   "delta": 560
+  },
+  {
+   "id": "wait",
+   "kind": "wait",
+   "label": "Wait for the page to update"
+  }
+ ],
+ "marker": [
+  1790306048517.95,
+  "https://creator.douyin.com/creator-micro/content/upload",
+  0,
+  0,
+  1536,
+  674,
+  "抖音创作者中心",
+  "作品发布\n首页\n内容管理\n数据中心\n收入变现\n创作服务\n首页\nAI分身\n随变\n世界书\nAI工坊\n发布视频\n发布图文\n发布全景视频\n发布文章\n了解上传规则详情\n视频大小和格式\n支持投稿3小时以内、64G以内的视频，鼓励优质中长视频完整表达\n视频画质\n支持投稿4K视频，让好内容以更高清的方式被看见，并有机会入选抖音精选\n视频画幅\n建议上传宽高比为16:9、9:16、3:4、4:3、9:19.5（5.8寸）的视频\n点击上传 或直接将视频文件拖入此区域\n为了更好的观看体验和平台安全，平台将对上传的视频预审。超过40秒的视频建议上传横版视频\n上传\n视频",
+  [
+   {
+    "node": 1,
+    "role": "button",
+    "label": "作品发布",
+    "kind": "click",
+    "value": ""
+   },
+   {
+    "node": 2,
+    "role": "menuitem",
+    "label": "首页",
+    "kind": "click",
+    "value": "0"
+   },
+   {
+    "node": 3,
+    "role": "menuitem",
+    "label": "内容管理",
+    "kind": "click",
+    "value": "0"
+   },
+   {
+    "node": 4,
+    "role": "menuitem",
+    "label": "数据中心",
+    "kind": "click",
+    "value": "0"
+   },
+   {
+    "node": 5,
+    "role": "menuitem",
+    "label": "收入变现",
+    "kind": "click",
+    "value": "0"
+   },
+   {
+    "node": 6,
+    "role": "menuitem",
+    "label": "创作服务",
+    "expanded": "false",
+    "kind": "click",
+    "value": ""
+   },
+   {
+    "node": 7,
+    "role": "button",
+    "label": "首页",
+    "kind": "click",
+    "value": ""
+   },
+   {
+    "node": 8,
+    "role": "button",
+    "label": "AI分身",
+    "kind": "click",
+    "value": ""
+   },
+   {
+    "node": 9,
+    "role": "button",
+    "label": "随变",
+    "kind": "click",
+    "value": ""
+   },
+   {
+    "node": 10,
+    "role": "button",
+    "label": "世界书",
+    "kind": "click",
+    "value": ""
+   },
+   {
+    "node": 11,
+    "role": "button",
+    "label": "AI工坊",
+    "kind": "click",
+    "value": ""
+   },
+   {
+    "node": 12,
+    "role": "link",
+    "label": "了解上传规则详情",
+    "kind": "click",
+    "value": ""
+   },
+   {
+    "node": 13,
+    "role": "button",
+    "label": "上传 视频",
+    "kind": "click",
+    "value": ""
+   }
+  ],
+  []
+ ],
+ "page_key": [
+  1790306048517.95,
+  "https://creator.douyin.com/creator-micro/content/upload",
+  0,
+  0,
+  1536,
+  674,
+  []
+ ],
+ "guards": {
+  "1": [
+   1,
+   "button",
+   "作品发布",
+   "",
+   null,
+   null,
+   null,
+   false,
+   "false",
+   null,
+   null,
+   null,
+   null,
+   "作品发布"
+  ],
+  "2": [
+   2,
+   "menuitem",
+   "首页",
+   0,
+   null,
+   null,
+   null,
+   false,
+   "false",
+   null,
+   null,
+   null,
+   null,
+   "首页"
+  ],
+  "3": [
+   3,
+   "menuitem",
+   "内容管理",
+   0,
+   null,
+   null,
+   null,
+   false,
+   "false",
+   null,
+   null,
+   null,
+   null,
+   "内容管理"
+  ],
+  "4": [
+   4,
+   "menuitem",
+   "数据中心",
+   0,
+   null,
+   null,
+   null,
+   false,
+   "false",
+   null,
+   null,
+   null,
+   null,
+   "数据中心"
+  ],
+  "5": [
+   5,
+   "menuitem",
+   "收入变现",
+   0,
+   null,
+   null,
+   null,
+   false,
+   "false",
+   null,
+   null,
+   null,
+   null,
+   "收入变现"
+  ],
+  "6": [
+   6,
+   "menuitem",
+   "创作服务",
+   null,
+   null,
+   null,
+   null,
+   false,
+   null,
+   "false",
+   null,
+   null,
+   null,
+   "创作服务"
+  ],
+  "7": [
+   7,
+   "button",
+   "首页",
+   "",
+   null,
+   null,
+   null,
+   false,
+   null,
+   null,
+   null,
+   null,
+   null,
+   "首页\nAI分身\n随变\n世界书\nAI工坊"
+  ],
+  "8": [
+   8,
+   "button",
+   "AI分身",
+   "",
+   null,
+   null,
+   null,
+   false,
+   null,
+   null,
+   null,
+   null,
+   null,
+   "首页\nAI分身\n随变\n世界书\nAI工坊"
+  ],
+  "9": [
+   9,
+   "button",
+   "随变",
+   "",
+   null,
+   null,
+   null,
+   false,
+   null,
+   null,
+   null,
+   null,
+   null,
+   "首页\nAI分身\n随变\n世界书\nAI工坊"
+  ],
+  "10": [
+   10,
+   "button",
+   "世界书",
+   "",
+   null,
+   null,
+   null,
+   false,
+   null,
+   null,
+   null,
+   null,
+   null,
+   "首页\nAI分身\n随变\n世界书\nAI工坊"
+  ],
+  "11": [
+   11,
+   "button",
+   "AI工坊",
+   "",
+   null,
+   null,
+   null,
+   false,
+   null,
+   null,
+   null,
+   null,
+   null,
+   "首页\nAI分身\n随变\n世界书\nAI工坊"
+  ],
+  "12": [
+   12,
+   "link",
+   "了解上传规则详情",
+   null,
+   null,
+   null,
+   null,
+   false,
+   null,
+   null,
+   null,
+   null,
+   "https://creator.douyin.com/creator-micro/content/quality_statement?enter_method=click",
+   "了解上传规则详情"
+  ],
+  "13": [
+   13,
+   "button",
+   "上传 视频",
+   "",
+   null,
+   null,
+   null,
+   false,
+   null,
+   null,
+   null,
+   null,
+   null,
+   "上传视频"
+  ]
+ },
+ "omitted_actions": 0
+}
